@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BonViste" language="groovy" pageWidth="724" pageHeight="1024" columnWidth="700" leftMargin="12" rightMargin="12" topMargin="12" bottomMargin="12" uuid="ae0d4d82-4ba1-4384-9493-5197b626d702">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" forecolor="#666666" backcolor="#CCCCFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#8FAFCC">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#C3D9D9">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#E6FFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#BFD6FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#E6EFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="Transit" class="java.lang.String"/>
+	<parameter name="Declarant" class="java.lang.String"/>
+	<parameter name="Id_Declarant" class="java.lang.String"/>
+	<parameter name="SrcLogo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[new String("E:\\ESI\\GestionFacturation\\Projet\\src\\report\\logo.jpg")]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IdDossier" class="java.lang.Integer"/>
+	<parameter name="RC" class="java.lang.String">
+		<defaultValueExpression><![CDATA[new String("35/00-0725422 B 09")]]></defaultValueExpression>
+	</parameter>
+	<parameter name="NIF" class="java.lang.String">
+		<defaultValueExpression><![CDATA[new String("000935072542295")]]></defaultValueExpression>
+	</parameter>
+	<parameter name="NIS" class="java.lang.String">
+		<defaultValueExpression><![CDATA[new String("000935339001247")]]></defaultValueExpression>
+	</parameter>
+	<parameter name="FAX" class="java.lang.String">
+		<defaultValueExpression><![CDATA[new String("+213(0)24 848 690")]]></defaultValueExpression>
+	</parameter>
+	<parameter name="MOBILE" class="java.lang.String">
+		<defaultValueExpression><![CDATA[new String("0560 06 75 20 / 0560 06 75 22")]]></defaultValueExpression>
+	</parameter>
+	<parameter name="EMAIL" class="java.lang.String">
+		<defaultValueExpression><![CDATA[new String("azmasousdouane@gmail.com")]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Adresse" class="java.lang.String">
+		<defaultValueExpression><![CDATA[new String("cite Djilali Saidani Ouled Haddej - Boumerdes")]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Capitale" class="java.lang.String">
+		<defaultValueExpression><![CDATA[new String("1 000 000 DA")]]></defaultValueExpression>
+	</parameter>
+	<parameter name="DSTR_OT" class="java.lang.String">
+		<defaultValueExpression><![CDATA[new String("DSTR")]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT idDossier,NoConteneur,NoPlomb,Fraude FROM Dossier_Conteneur
+where idDossier=$P{IdDossier};]]>
+	</queryString>
+	<field name="idDossier" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NoConteneur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NoPlomb" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Fraude" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="210" splitType="Stretch">
+			<image>
+				<reportElement x="35" y="1" width="621" height="98" uuid="04d4ae1c-1675-4d54-8d47-021603b37fb4"/>
+				<imageExpression><![CDATA[$P{SrcLogo}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="55" y="118" width="60" height="20" uuid="48f6a840-61b4-42be-b7c5-d1eee049e2c6"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Adresse : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="138" width="29" height="20" uuid="ff504a31-277e-4a98-a82a-3490095bee9c"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[RC : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="137" width="29" height="20" uuid="03806fbe-7f84-45fe-81de-be87a5a8d76e"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[NIF : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="138" width="29" height="20" uuid="df12b2cc-6702-42e5-b3a3-dce304f4d546"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[NIS : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="158" width="29" height="20" uuid="bd2f1160-e6b5-4681-9564-61897c6e47a5"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[FAX : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="157" width="44" height="20" uuid="70a586bf-0ec2-4446-823f-8748cdbe0abd"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[MOB : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="257" y="178" width="78" height="20" uuid="2ac2538a-b95a-423e-8f84-103330aac2df"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[EMAIL : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="177" width="62" height="20" uuid="61417909-a208-4c17-a0b6-dcbf961c741d"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Capitale : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="115" y="177" width="126" height="20" uuid="04259264-4adf-4c58-b197-9949fac9ae22"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Capitale}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="158" width="364" height="19" uuid="245d6e58-e3f8-4351-89cf-49c6b94dd870"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{MOBILE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="138" width="191" height="20" uuid="c12ab184-491d-441f-a9ed-4720b7bad41c"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NIF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="178" width="247" height="19" uuid="9de97517-a589-4a43-a8c6-4c890334d37a"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{EMAIL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="84" y="158" width="166" height="20" uuid="68fe39c8-a512-4bb2-9af7-079eb650b7ce"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{FAX}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="84" y="137" width="166" height="20" uuid="cf35696f-4095-48ed-8cdc-948691ee0f27"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{RC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="115" y="118" width="535" height="20" uuid="4986e7f4-2089-4ddc-b10b-819cb4d16cfe"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Adresse}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="499" y="138" width="159" height="20" uuid="1f9780ba-5a9e-45d5-bf14-8fc23f672d8d"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NIS}]]></textFieldExpression>
+			</textField>
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="35" y="113" width="621" height="84" uuid="43687697-9d2b-40cf-be43-803400c6bc42"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="229" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="88" width="161" height="20" uuid="d3931984-c0bf-4f29-b443-662181a8242e"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Je soussigne transit : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="121" width="245" height="20" uuid="e19556e6-e7be-4bc7-a191-251d11695acf"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Représenté par le déclarant Mr : ......]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="121" width="82" height="20" uuid="dc743868-adb0-4b91-9d15-97dc7d132366"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Badge n° :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="153" width="472" height="19" uuid="aa001a8f-bd56-40ef-a952-eaf995df9770"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Déclaré avoir procédé ce jour a la visite du (des) conteneur(s)]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="577" y="88" width="123" height="20" uuid="51c75e2d-29db-452e-99db-1742f0d2f183"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Narkisim" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="518" y="88" width="59" height="20" uuid="15c0c62c-096c-4a2f-b091-01352ac3187d"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="518" y="121" width="113" height="20" uuid="71db02e2-0497-496d-a558-55ddd9e66df7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Narkisim" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Id_Declarant}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="121" width="149" height="20" uuid="c08e32c0-a512-4ffc-bb1b-01d60eb084f0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Narkisim" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Declarant}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="180" width="190" height="19" uuid="0b98b451-f0fd-44e6-a63a-b9eca007ac4d"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[désigné(s) par            N° : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="201" y="180" width="100" height="20" uuid="87306646-3e93-497a-8077-ef7cae572700"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Narkisim" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{IdDossier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="168" y="89" width="167" height="20" uuid="6c11f0da-efa2-4b41-9e22-d5a7222a61bc"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Narkisim" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Transit}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="201" y="0" width="317" height="53" uuid="2f52a8ad-9686-4641-93d7-e1838e1c0b43"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Serif" size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BON DE VISITE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="118" y="180" width="50" height="20" uuid="cbb0144a-9688-49d9-b01f-c15cefc4f17e"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DSTR_OT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement style="table 2_CH" x="55" y="2" width="191" height="48" forecolor="#820000" uuid="dbe69531-d5c4-40c7-b7fe-cf12ad103617"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[NoConteneur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table 2_CH" x="246" y="2" width="225" height="48" forecolor="#820000" uuid="85bb8b4c-5c1a-4ce3-be03-eb7a21faa131"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[NoPlomb]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table 2_CH" x="471" y="2" width="148" height="48" forecolor="#820000" uuid="f9d3c228-aa6b-44bf-98fd-fddc70073e09"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Fraude]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="48" splitType="Stretch">
+			<textField>
+				<reportElement style="table_TD" mode="Opaque" x="55" y="-1" width="191" height="48" backcolor="#FFFFFF" uuid="6ba94624-e0a5-49f8-82bd-1099f5146294"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NoConteneur}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="table_TD" mode="Opaque" x="246" y="-1" width="225" height="48" backcolor="#FFFFFF" uuid="37411418-d90b-4547-8a2a-42a8975d4376"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NoPlomb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="table_TD" mode="Opaque" x="471" y="-1" width="148" height="48" backcolor="#FFFFFF" uuid="b2453d7f-d884-42ad-8f03-b605b9ea95a1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Fraude}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="151" splitType="Stretch">
+			<staticText>
+				<reportElement x="84" y="22" width="100" height="20" uuid="daf55c94-b47e-469c-94c9-fa76c5598a3b"/>
+				<textElement>
+					<font size="15" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Visa Douane]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="295" y="22" width="100" height="20" uuid="c8a47cff-a5c9-4c82-9337-02ace757da2c"/>
+				<textElement>
+					<font size="15" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Visa Entrepôt ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="531" y="22" width="100" height="20" uuid="07b0ec02-449a-4400-ad69-4e717e7545e0"/>
+				<textElement>
+					<font size="15" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Visa Transit]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="279" y="13" width="172" height="20" uuid="d4b2bb94-f1b2-4d6b-93cc-12557efd52e6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

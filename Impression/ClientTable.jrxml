@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ClientTable" language="groovy" pageWidth="800" pageHeight="842" columnWidth="760" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="97154667-c8d5-4023-aecd-5df7ce1b1bee">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="10"/>
+	<property name="ireport.y" value="0"/>
+	<field name="Code" class="java.lang.String"/>
+	<field name="Nom" class="java.lang.String"/>
+	<field name="Prénom" class="java.lang.String"/>
+	<field name="Mobile" class="java.lang.String"/>
+	<field name="Adresse" class="java.lang.String"/>
+	<field name="RC" class="java.lang.String"/>
+	<field name="Carte Fiscale" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="292" y="15" width="202" height="44" uuid="c6a1dd0a-62f8-48d0-86e3-f650ce83977e"/>
+				<textElement>
+					<font size="30"/>
+				</textElement>
+				<text><![CDATA[Table Client]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="92" y="0" width="100" height="20" uuid="fbc174df-6e66-4f2a-895c-b2e5c2bfb76b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="192" y="0" width="100" height="20" uuid="f821b8e7-5ad4-4e72-85d0-022c5b7134c1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Prénom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="0" width="100" height="20" uuid="0de7f4ff-59aa-4026-a4e3-59b8197a21d0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="392" y="0" width="100" height="20" uuid="413ba945-e956-4451-a3ac-3ba75758d284"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Adresse}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="492" y="0" width="100" height="20" uuid="6b22ba23-2e02-4be9-b96b-846a1435060b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="592" y="0" width="100" height="20" uuid="ee86099c-7a5d-4c6f-995d-aa86df14ca8d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Carte Fiscale}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="27" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

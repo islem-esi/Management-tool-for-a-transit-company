@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="biblio/com.mysql.jdbc_5.1.5.jar.zip"/>
+	<classpathentry kind="lib" path="biblio/rs2xml.jar"/>
+	<classpathentry kind="lib" path="biblio/jasperreports-5.6.0.jar"/>
+	<classpathentry kind="lib" path="biblio/jasperreports-fonts-5.6.0.jar"/>
+	<classpathentry kind="lib" path="biblio/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="biblio/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="biblio/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="biblio/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="biblio/groovy-all-2.0.1.jar"/>
+	<classpathentry kind="lib" path="biblio/iText-2.1.7.js2.jar"/>
+	<classpathentry kind="lib" path="biblio/jcommon-1.0.15.jar"/>
+	<classpathentry kind="lib" path="biblio/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="biblio/forms-1.3.0.jar" sourcepath="biblio/forms-1.3.0-src.zip"/>
+	<classpathentry kind="lib" path="biblio/chart/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="biblio/chart/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="biblio/chart/jfreechart-1.0.19-experimental.jar"/>
+	<classpathentry kind="lib" path="biblio/chart/jfreechart-1.0.19-swt.jar"/>
+	<classpathentry kind="lib" path="biblio/chart/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="biblio/chart/jfreesvg-2.0.jar"/>
+	<classpathentry kind="lib" path="biblio/chart/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="biblio/chart/orsoncharts-1.4-eval-nofx.jar"/>
+	<classpathentry kind="lib" path="biblio/chart/orsonpdf-1.6-eval.jar"/>
+	<classpathentry kind="lib" path="biblio/chart/servlet.jar"/>
+	<classpathentry kind="lib" path="biblio/chart/swtgraphics2d.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
